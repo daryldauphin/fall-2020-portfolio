@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.button {
+    background-color: #4FBEF9;
+	box-shadow: none !important;
+	border-radius: 26px;
+	font-weight: 500;
+	height: 46px;
+	line-height: 46px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 30px;
+	outline: none !important;
+	overflow: hidden;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: .5px;
+    border: 0;
+	cursor: pointer;
+	font-size: 14px;
+	
+}
+
+.buttonDiv {
+	max-width: 550px;
+		margin: 0 auto;
+		
+			text-align: left !important;
+			
+}
+.button, .button:hover, .button:focus {
+	color: #fff;
+	text-decoration: none;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    
+    .button {
+        font-size: 14px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .button {
+        padding: 0 28px;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
