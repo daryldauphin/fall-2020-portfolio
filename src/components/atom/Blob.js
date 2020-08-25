@@ -8,9 +8,9 @@ import Menu from './Menu';
 function Blob() {
   return (
     <div className="blobDiv">      
-    <Menu />
 
-      <div className="blob">
+      <div className="blob">    <Menu />
+
         <h6>HI THERE !</h6>
         <h1><span>I'M</span> DARYL DAUPHIN</h1>
         <p>
