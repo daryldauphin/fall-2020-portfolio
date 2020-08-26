@@ -22,10 +22,13 @@ let bar1, bar2, bar3 = useRef(null)
 
 useEffect(()=>{
     if(state.active === true){
-        gsap.to(bar1, 0.4, { x: "+80px", y: "-80px", delay: 0.1, ease: Power4.easeIn })
-        gsap.to(bar2,0.4, {  x: "+=80px", y: "-=80px", ease: Power4.easeIn})
+        gsap.to(bar1, 0.4, { x: "+=80px", y: "-=80px", delay: 0.1, ease: Power4.easeIn })
+        gsap.to(bar2, 0.4, {  x: "+=80px", y: "-=80px", ease: Power4.easeIn})
         gsap.to(bar3, 0.4, { x: "+=80px", y: "-=80px", delay: 0.2, ease: Power4.easeIn})
-    }else{
+    }else if (state.active.reversed()){
+      gsap.to(bar1, 0.4, { x: "+=80px", y: "-=80px", delay: 0.1, ease: Power4.easeIn }).reverse()
+        gsap.to(bar2, 0.4, {  x: "+=80px", y: "-=80px", ease: Power4.easeIn}).reverse()
+        gsap.to(bar3, 0.4, { x: "+=80px", y: "-=80px", delay: 0.2, ease: Power4.easeIn}).reverse()
     }
 })
     

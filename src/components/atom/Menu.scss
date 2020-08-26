@@ -66,45 +66,17 @@ $zoom-slow: all 2.4s cubic-bezier(.55,0,.1,1);
 
 
 //
-.container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 320px;
-  min-height: 568px;
-  margin: 0 auto;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 9px 13px 0px $black-30;
--moz-box-shadow: 0px 9px 13px 0px $black-30;
-box-shadow: 0px 9px 13px 0px $black-30;
-  -webkit-transform: scale(1);
-}
+
 
 .menu-trigger, .close-trigger {
   position: absolute;
-  top: 32px;
+  top: 25px;
   right: 20px;
   display: block;
   width: 42px;
   height: 42px;
   cursor: pointer;
   z-index: 333;
-  overflow: hidden;
-
-  &:hover {
-    .menu-trigger-bar {
-      &:before {
-        width: 100%;
-      }
-    }
-    
-    .close-trigger-bar {
-      &:before {
-        width: 100%;
-      }
-    }
-  }
 }
 
 .close-trigger {
@@ -130,11 +102,11 @@ box-shadow: 0px 9px 13px 0px $black-30;
     width: 0%;
     height: 100%;
     background-color: $black-20;
-    transition: $slide;
   }
   
   &.top {
     width: 50%;
+    border: red solid 1px;
   }
   &.middle {
     &:before {
@@ -152,7 +124,7 @@ box-shadow: 0px 9px 13px 0px $black-30;
   display: block;
   width: 100%;
   height: 4px;
-  background-color: $dark-grey;
+  background-color: #111111;
   position: relative;
   
   &:before {
@@ -164,18 +136,9 @@ box-shadow: 0px 9px 13px 0px $black-30;
     width: 0%;
     height: 100%;
     background-color: $white-20;
-    transition: $slide;
   }
   
-  &.left {
-    transform: translateX(100px) translateY(-100px) rotate(-45deg);
-  }
-  &.right {
-    transform: translateX(-100px) translateY(-100px) rotate(45deg);
-    top: -3px;
-  }
 }
-
 .logo {
   display: block;
   width: 64px;
