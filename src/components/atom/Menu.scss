@@ -82,6 +82,7 @@ $zoom-slow: all 2.4s cubic-bezier(.55,0,.1,1);
 .close-trigger {
   z-index: 5;
   top: 42px;
+  border: red 1px solid;
 }
 
 .menu-trigger-bar {
@@ -106,7 +107,6 @@ $zoom-slow: all 2.4s cubic-bezier(.55,0,.1,1);
   
   &.top {
     width: 50%;
-    border: red solid 1px;
   }
   &.middle {
     &:before {
@@ -126,7 +126,8 @@ $zoom-slow: all 2.4s cubic-bezier(.55,0,.1,1);
   height: 4px;
   background-color: #111111;
   position: relative;
-  
+  border: red 1px solid;
+
   &:before {
     content: "";
     position: absolute;
