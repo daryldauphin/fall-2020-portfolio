@@ -3,7 +3,6 @@ import "./About.scss";
 import "./Blob.scss";
 import "./Menu.scss";
 import { gsap, TimelineMax, Power2, Power4 } from "gsap";
-import { render } from "react-dom";
 
 // get our fontawesome imports
 import { faHome, faUser, faFolderOpen, faEnvelopeOpen, faComment } from "@fortawesome/free-solid-svg-icons";
