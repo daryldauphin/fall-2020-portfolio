@@ -230,41 +230,6 @@ body {
     cursor: pointer;
 
 }
-.menu-bars{
-    display:flex;
-    flex-direction:column;
-}
-
-.bar1{
-  	background-color:#fff;
-    width: 16px;
-    height: 2px;
-    position: relative;
-    margin: 0 0 2px 0;
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-}
-
-.bar2{
-	  background-color:#fff;
-    width: 28px;
-    height: 2px;
-    position: relative;
-    margin: 2px 0;
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-}
-
-.bar3{
-	  background-color:#fff;
-    width: 16px;
-    height: 2px;
-    position: relative;
-    left: 16px;
-    margin: 2px 0 0 0;
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-}
 
 nav {
     display: flex;
