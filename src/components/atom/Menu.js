@@ -3,6 +3,11 @@ import "./About.scss";
 import "./Blob.scss";
 import "./Menu.scss";
 import { gsap, TimelineMax, Power2, Power4 } from "gsap";
+import { render } from "react-dom";
+
+// get our fontawesome imports
+import { faHome, faUser, faFolderOpen, faEnvelopeOpen, faComment } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Menu() {
   const [active, setActive] = useState(false);
@@ -50,7 +55,6 @@ function Menu() {
   console.clear();
   
   var navMain = document.getElementById("nav-main");
-  var menuButton = document.getElementById("menu-button");
   var toggle = true;
   var mqls = [
    window.matchMedia("(min-width: 769px)"),
@@ -65,7 +69,7 @@ function Menu() {
       }
       if (mqls[1].matches){
           menuAnimation
-          .to(navMain, 0.8, {width: '50%', className : "+=vertical", ease: Power2.easeInOut, transform: "translate3d(0,0,0)"},0);
+          .to(navMain, 0.8, {width: '100%', className : "+=vertical", ease: Power2.easeInOut, transform: "translate3d(0,0,0)"},0);
       }
       if (mqls[2].matches){
           menuAnimation
@@ -94,7 +98,20 @@ function Menu() {
         
         <nav id="nav-main" class="skew">      
 
-         <section id="home">Home</section>
+         <section>
+         <FontAwesomeIcon icon={faHome}/>
+           <h1 id="home">Home</h1>
+           <FontAwesomeIcon icon={faUser}/>
+           <h1  id="about">About</h1>
+           <FontAwesomeIcon icon={faFolderOpen}/>
+           <h1  id="portfolio">Portfolio</h1>
+           <FontAwesomeIcon icon={faEnvelopeOpen}/>
+           <h1  id="contact">Contact</h1>
+           <FontAwesomeIcon  icon={faComment}/>
+           <h1  id="blog">Blog</h1>
+           {/* <FontAwesomeIcon icon={faHome} /> */}
+
+           </section>
         </nav>
    <button id="menu-button" class="menu-button">
         <div class="menu-bars" id="menuBox">

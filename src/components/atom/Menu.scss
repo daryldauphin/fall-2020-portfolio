@@ -85,7 +85,6 @@ $zoom-slow: all 2.4s cubic-bezier(.55,0,.1,1);
 .close-trigger {
   z-index: 5;
   top: 42px;
-  border: red 1px solid;
 }
 
 .menu-trigger-bar {
@@ -228,6 +227,7 @@ body {
     height: 18px;
     z-index: 0;
     cursor: pointer;
+    transform: rotate(-45deg);
 
 }
 
@@ -249,11 +249,12 @@ nav {
 nav section {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
     position: fixed;
     color: white;
+
 }	
 
 .skew{
@@ -273,11 +274,11 @@ nav section {
 }
 
 .skewback {
-    -webkit-clip-path: polygon(0 0, -100% 0, 100% 100%, 0 100%);
-    -moz-clip-path: polygon(0 0, -100% 0, 100% 100%, 0 100%);
-    -ms-clip-path: polygon(0 0, -100% 0, 100% 100%, 0 100%);
-    -o-clip-path: polygon(0 0, -100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, -100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -ms-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -o-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
 }
 
@@ -289,3 +290,13 @@ nav section {
 		line-height: 29px;
 		margin: 18px 0 13px;
 }
+
+#home ~ h1 {
+  color:white;
+  font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+		font-size: 29px;
+		line-height: 29px;
+		margin: 18px 0 13px;
+}
+
