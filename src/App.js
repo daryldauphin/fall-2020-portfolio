@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import Blob from './components/atom/Blob';
+import Blob from './components/atoms/Blob';
 
 
 function App() {

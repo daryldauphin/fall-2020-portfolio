@@ -254,8 +254,12 @@ nav section {
     align-items: center;
     position: fixed;
     color: white;
+    text-transform: uppercase;
+
 
 }	
+
+
 
 .skew{
     -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
@@ -288,7 +292,8 @@ nav section {
 	font-weight: 700;
 		font-size: 29px;
 		line-height: 29px;
-		margin: 18px 0 13px;
+    margin: 18px 0 13px;
+    
 }
 
 #home ~ h1 {
@@ -299,4 +304,9 @@ nav section {
 		line-height: 29px;
 		margin: 18px 0 13px;
 }
+
+
+
+
+
 

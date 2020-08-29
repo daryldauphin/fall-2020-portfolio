@@ -3,7 +3,6 @@ import "./About.scss";
 import "./Blob.scss";
 import "./Menu.scss";
 import { gsap, TimelineMax, Power2, Power4 } from "gsap";
-
 // get our fontawesome imports
 import { faHome, faUser, faFolderOpen, faEnvelopeOpen, faComment } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,6 +21,9 @@ function Menu() {
   const tl = useRef();
   var menuAnimation = new TimelineMax({paused:true});
   var menuAnimationBack = new TimelineMax({paused:true, reversed: true});
+  
+
+
   
   useEffect(() => {
     tl.current = gsap
