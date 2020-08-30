@@ -2,14 +2,20 @@ import React, { useRef, useEffect, useState } from "react";
 import "./About.scss";
 import "./Blob.scss";
 import "./Menu.scss";
+//animation import
 import { gsap, TimelineMax, Power2, Power4 } from "gsap";
 // get our fontawesome imports
 import { faHome, faUser, faFolderOpen, faEnvelopeOpen, faComment } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+//import to link other pages
+import {BrowserRouter as Router, Link} from "react-router-dom";
+
 function Menu() {
+  //usestate to set base state
   const [active, setActive] = useState(false);
 
+  //
   const handleClick = () => {
     setActive(!active);
     toggle = !toggle;
@@ -100,16 +106,26 @@ function Menu() {
         <nav id="nav-main" class="skew">      
 
          <section>
-         <FontAwesomeIcon icon={faHome}/>
+           <Router>
+             <Link to="/src/pages/Home.js" style={{ textDecoration: 'none',listStyle: "none" }}>
+            <FontAwesomeIcon icon={faHome}/>
            <h1 id="home">Home</h1>
-           <FontAwesomeIcon icon={faUser}/>
-           <h1  id="about">About</h1>
+         </Link>
+
+        
+          <Link to="/src/pages/About.js" style={{ textDecoration: 'none' }}>
+            <FontAwesomeIcon style={{ textDecoration: 'none' }} icon={faUser}/>
+           <h1 style={{ color: 'white' }} id="about">About</h1>
+          </Link>
+           
            <FontAwesomeIcon icon={faFolderOpen}/>
            <h1  id="portfolio">Portfolio</h1>
            <FontAwesomeIcon icon={faEnvelopeOpen}/>
            <h1  id="contact">Contact</h1>
            <FontAwesomeIcon  icon={faComment}/>
            <h1  id="blog">Blog</h1>
+           </Router>
+         
            {/* <FontAwesomeIcon icon={faHome} /> */}
 
            </section>

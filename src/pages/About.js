@@ -1,21 +1,28 @@
 import React from 'react';
-import './App.scss';
+import '../App.scss';
  import {Route, BrowserRouter as Router} from "react-router-dom";
-import Home from './pages/Home'
-import About from './pages/About'
-
-
-function App() {
+import App from '../App'
+import Blob from '../components/atoms/Blob';
+import Home from './Home'
+function About() {
   return (
-    <Router>
+      <div>    
+          <App />
+
+         <Router>
       <div className="App">
       {/* mobile layout */}
       <Route path="/src/pages/Home.js" component={Home} />
       <Route path="/src/pages/About.js" component={About} />
     </div>
     </Router>
+    <Blob />       
+    <p style={{ color: 'white' }}>about</p>
+
+      </div>
+    
     
   );
 }
 
-export default App;
+export default About;
